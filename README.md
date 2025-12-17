@@ -1,6 +1,3 @@
-# Lux-Visual-Sentinel
-An autonomous cybersecurity agent powered by the Lux Foundation Model. It visually audits your screen to detect phishing, social engineering, and UI-based malware triggers that code scanners miss. 🛡️👁️
-
 # 🛡️ Lux Visual Sentinel: Autonomous Security Auditor
 
 ## 🚨 The Problem
@@ -27,34 +24,9 @@ It continuously observes the browser, identifies visual irregularities, and auto
     * `AsyncPyautoguiActionHandler` (Action)
 * **Language:** Python 3.10+
 
-## 🚀 How It Works
-The agent operates on a continuous **Vision-Reasoning-Action Loop**:
+## 🔑 Configuration
+To use this agent, you must provide your Lux API Key. For security, we use environment variables.
 
-1.  **OBSERVE:** The agent takes a screenshot of the current active window.
-2.  **REASON:** The Lux model analyzes the pixels to answer: *"Does this page look trustworthy? Are there deceptive UI elements?"*
-3.  **ACT:** If a threat is detected or a summary is requested, the agent physically moves the mouse to open a text editor (Notepad/TextEdit) and types out its findings.
-
-## 📦 Usage
-
-1.  **Clone the Repository**
-    ```bash
-    git clone [https://github.com/yourusername/lux-visual-sentinel.git](https://github.com/yourusername/lux-visual-sentinel.git)
-    ```
-
-2.  **Install Dependencies**
-    ```bash
-    pip install oagi asyncio
-    ```
-
-3.  **Run the Sentinel**
-    ```bash
-    python security_agent.py
-    ```
-
-4.  **Demo Instructions**
-    * Open a "safe" phishing test site (e.g., a screenshot of a known scam or a training site).
-    * Run the script.
-    * Watch as the agent analyzes the screen and opens your text editor to write the **Security Audit Report**.
-
-## 📄 License
-MIT License
+**Mac / Linux:**
+```bash
+export LUX_API_KEY="your_actual_key_here"
