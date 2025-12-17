@@ -1,0 +1,5 @@
+oagi
+asyncio
+# Add any other specific libraries you used, e.g.
+# pyautogui
+# pillow
